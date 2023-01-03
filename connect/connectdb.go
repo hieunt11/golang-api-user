@@ -7,7 +7,7 @@ import (
 )
 
 func Openconnect() *sql.DB {
-	db, err := sql.Open("mysql", "hieunt20:Hanoi@123@tcp(127.0.0.1:3306)/user-db")
+	db, err := sql.Open("mysql", "hieunt:Hanoi@123@tcp(10.10.2.254:3306)/user-db")
 	if err != nil {
 		log.Print(err.Error())
 	}
